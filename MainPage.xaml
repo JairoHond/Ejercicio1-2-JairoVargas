@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2_JairoVargas.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#3498DB"
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="Resources/logo_uth_2009.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Ejercicio1.2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Entry x:Name="txtnombre"   Placeholder="Nombre"     PlaceholderColor="DarkGray"   Keyboard="Text"    HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"/>
+            <Entry x:Name="txtapellido" Placeholder="Apellido"   PlaceholderColor="DarkGray" Keyboard="Text"    HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"></Entry>
+            <Entry x:Name="txtFecha"     Placeholder="Fecha"       PlaceholderColor="DarkGray" Keyboard="Numeric" HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"></Entry>
+            <Entry x:Name="txtcorreo"   Placeholder="Correo"     PlaceholderColor="DarkGray" Keyboard="Email"   HorizontalTextAlignment="Center" TextColor="#050505" BackgroundColor="#FAF2F2"  ></Entry>
+
+            <Button x:Name="btnenviar" Text="Enviar Datos" CornerRadius="40" HorizontalOptions="Center" BackgroundColor="White" Clicked="btnenviar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
